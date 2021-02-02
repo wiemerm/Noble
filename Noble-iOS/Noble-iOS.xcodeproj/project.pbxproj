@@ -25,14 +25,14 @@
 			containerPortal = 7555FF73242A565900829871 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7555FF7A242A565900829871;
-			remoteInfo = Noble-iOS;
+			remoteInfo = "Noble-iOS";
 		};
 		7555FF9D242A565B00829871 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7555FF73242A565900829871 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7555FF7A242A565900829871;
-			remoteInfo = Noble-iOS;
+			remoteInfo = "Noble-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7555FF7B242A565900829871 /* Noble-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noble-iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF7B242A565900829871 /* Noble-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noble-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7E242A565900829871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7555FF80242A565900829871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,11 +59,11 @@
 		7555FF87242A565B00829871 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7555FF8A242A565B00829871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7555FF91242A565B00829871 /* Noble-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Noble-iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF95242A565B00829871 /* Noble-iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noble-iOSTests.swift; sourceTree = "<group>"; };
+		7555FF91242A565B00829871 /* Noble-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Noble-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF95242A565B00829871 /* Noble-iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Noble-iOSTests.swift"; sourceTree = "<group>"; };
 		7555FF97242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7555FF9C242A565B00829871 /* Noble-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Noble-iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FFA0242A565B00829871 /* Noble-iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noble-iOSUITests.swift; sourceTree = "<group>"; };
+		7555FF9C242A565B00829871 /* Noble-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Noble-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FFA0242A565B00829871 /* Noble-iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Noble-iOSUITests.swift"; sourceTree = "<group>"; };
 		7555FFA2242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7555FFB1242A642300829871 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +94,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638BCB4D25CA0A8200469EB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF7E242A565900829871 /* AppDelegate.swift */,
+				7555FF84242A565B00829871 /* Assets.xcassets */,
+				7555FF8C242A565B00829871 /* Info.plist */,
+				7555FF89242A565B00829871 /* LaunchScreen.storyboard */,
+				7555FF80242A565900829871 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		638BCB5425CA0B7C00469EB6 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF82242A565900829871 /* ContentView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +138,11 @@
 		7555FF7D242A565900829871 /* Noble-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7555FF7E242A565900829871 /* AppDelegate.swift */,
-				7555FF80242A565900829871 /* SceneDelegate.swift */,
-				7555FF82242A565900829871 /* ContentView.swift */,
-				7555FF84242A565B00829871 /* Assets.xcassets */,
-				7555FF89242A565B00829871 /* LaunchScreen.storyboard */,
-				7555FF8C242A565B00829871 /* Info.plist */,
+				638BCB5425CA0B7C00469EB6 /* Main View */,
 				7555FF86242A565B00829871 /* Preview Content */,
+				638BCB4D25CA0A8200469EB6 /* Supporting Files */,
 			);
-			path = Noble-iOS;
+			path = "Noble-iOS";
 			sourceTree = "<group>";
 		};
 		7555FF86242A565B00829871 /* Preview Content */ = {
@@ -143,7 +159,7 @@
 				7555FF95242A565B00829871 /* Noble-iOSTests.swift */,
 				7555FF97242A565B00829871 /* Info.plist */,
 			);
-			path = Noble-iOSTests;
+			path = "Noble-iOSTests";
 			sourceTree = "<group>";
 		};
 		7555FF9F242A565B00829871 /* Noble-iOSUITests */ = {
@@ -152,7 +168,7 @@
 				7555FFA0242A565B00829871 /* Noble-iOSUITests.swift */,
 				7555FFA2242A565B00829871 /* Info.plist */,
 			);
-			path = Noble-iOSUITests;
+			path = "Noble-iOSUITests";
 			sourceTree = "<group>";
 		};
 		7555FFB0242A642200829871 /* Frameworks */ = {
@@ -180,8 +196,8 @@
 			);
 			dependencies = (
 			);
-			name = Noble-iOS;
-			productName = Noble-iOS;
+			name = "Noble-iOS";
+			productName = "Noble-iOS";
 			productReference = 7555FF7B242A565900829871 /* Noble-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -198,8 +214,8 @@
 			dependencies = (
 				7555FF93242A565B00829871 /* PBXTargetDependency */,
 			);
-			name = Noble-iOSTests;
-			productName = Noble-iOSTests;
+			name = "Noble-iOSTests";
+			productName = "Noble-iOSTests";
 			productReference = 7555FF91242A565B00829871 /* Noble-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -216,8 +232,8 @@
 			dependencies = (
 				7555FF9E242A565B00829871 /* PBXTargetDependency */,
 			);
-			name = Noble-iOSUITests;
-			productName = Noble-iOSUITests;
+			name = "Noble-iOSUITests";
+			productName = "Noble-iOSUITests";
 			productReference = 7555FF9C242A565B00829871 /* Noble-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -487,12 +503,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Noble-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks";
-				INFOPLIST_FILE = Noble-iOS/Info.plist;
+				INFOPLIST_FILE = "Noble-iOS/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fallencosplay.Noble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,12 +523,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Noble-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks";
-				INFOPLIST_FILE = Noble-iOS/Info.plist;
+				INFOPLIST_FILE = "Noble-iOS/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fallencosplay.Noble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,14 +541,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Noble-iOSTests/Info.plist;
+				INFOPLIST_FILE = "Noble-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.Noble-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -546,14 +562,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Noble-iOSTests/Info.plist;
+				INFOPLIST_FILE = "Noble-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.Noble-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,17 +582,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Noble-iOSUITests/Info.plist;
+				INFOPLIST_FILE = "Noble-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.Noble-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Noble-iOS;
+				TEST_TARGET_NAME = "Noble-iOS";
 			};
 			name = Debug;
 		};
@@ -585,17 +601,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Noble-iOSUITests/Info.plist;
+				INFOPLIST_FILE = "Noble-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.Noble-iOSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.Noble-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Noble-iOS;
+				TEST_TARGET_NAME = "Noble-iOS";
 			};
 			name = Release;
 		};
