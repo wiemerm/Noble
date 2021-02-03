@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    Slider 1-->
+    <ImageView
+        android:id="@+id/first_slider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.0075"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/first_slider_left_guideline"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.06"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintLeft_toLeftOf="@id/first_slider"
+        app:layout_constraintRight_toRightOf="@id/first_slider"
+        app:layout_constraintBottom_toBottomOf="@id/first_slider"
+        android:layout_marginBottom="12dp"/>
+
+    <!--    Slider 2-->
+    <ImageView
+        android:id="@+id/second_slider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.0075"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/second_slider_left_guideline"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.06"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintLeft_toLeftOf="@id/second_slider"
+        app:layout_constraintRight_toRightOf="@id/second_slider"
+        app:layout_constraintBottom_toBottomOf="@id/second_slider"
+        android:layout_marginBottom="12dp"/>
+
+    <!--    SLider 3-->
+    <ImageView
+        android:id="@+id/third_slider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.0075"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/third_slider_left_guideline"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.06"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintLeft_toLeftOf="@id/third_slider"
+        app:layout_constraintRight_toRightOf="@id/third_slider"
+        app:layout_constraintBottom_toBottomOf="@id/third_slider"
+        android:layout_marginBottom="12dp"/>
+
+    <!--    Slider 4-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/tacPadBlue"
+        app:layout_constraintWidth_percent="0.0075"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/fourth_slider_left_guideline"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline"/>
+
+    <!--    Vertical Guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/first_slider_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/second_slider_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_slider_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fourth_slider_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76"/>
+
+    <!--    Horizontal Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

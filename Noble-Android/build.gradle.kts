@@ -13,7 +13,7 @@ dependencies {
 android {
     compileSdkVersion(29)
     defaultConfig {
-        applicationId = "com.fallencosplay.noble_mp.Noble-Android"
+        applicationId = "com.fallencosplay.noble_mp.Noble"
         minSdkVersion(24)
         targetSdkVersion(29)
         versionCode = 1

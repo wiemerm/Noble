@@ -1,0 +1,79 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="61.9dp"
+    android:height="61.9dp"
+    android:viewportWidth="61.9"
+    android:viewportHeight="61.9">
+    <path
+        android:pathData="M59.06,30.95c0,15.52 -12.58,28.11 -28.11,28.11c-15.52,0 -28.11,-12.59 -28.11,-28.11c0,-15.52 12.58,-28.11 28.11,-28.11C46.47,2.84 59.06,15.43 59.06,30.95z"
+        android:strokeWidth="2.044"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M23.3,12.32h22.41c0.98,0 1.77,0.75 1.77,1.68v6.45c0,0.93 -0.79,1.68 -1.77,1.68H23.3c-0.99,0 -1.77,-0.75 -1.77,-1.68V14C21.53,13.07 22.32,12.32 23.3,12.32z"
+        android:strokeWidth="1.533"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M17.16,21.93c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.56,-1.14 -2.56,-2.55c0,-1.41 1.14,-2.55 2.56,-2.55C16.02,19.38 17.16,20.52 17.16,21.93z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M17.16,21.93c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.56,-1.14 -2.56,-2.55c0,-1.41 1.14,-2.55 2.56,-2.55C16.02,19.38 17.16,20.52 17.16,21.93z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M14.75,35.45m-2.55,0a2.55,2.55 0,1 1,5.1 0a2.55,2.55 0,1 1,-5.1 0"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M14.75,35.45m-2.55,0a2.55,2.55 0,1 1,5.1 0a2.55,2.55 0,1 1,-5.1 0"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M35.54,35.45c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.55,-1.14 -2.55,-2.55s1.14,-2.55 2.55,-2.55C34.4,32.9 35.54,34.04 35.54,35.45z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M35.54,35.45c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.55,-1.14 -2.55,-2.55s1.14,-2.55 2.55,-2.55C34.4,32.9 35.54,34.04 35.54,35.45z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M51.34,35.15c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.55,-1.14 -2.55,-2.55s1.14,-2.55 2.55,-2.55C50.2,32.59 51.34,33.74 51.34,35.15z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M51.34,35.15c0,1.41 -1.14,2.55 -2.56,2.55c-1.41,0 -2.55,-1.14 -2.55,-2.55s1.14,-2.55 2.55,-2.55C50.2,32.59 51.34,33.74 51.34,35.15z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M41.01,43.35c0,1.41 -1.14,2.55 -2.55,2.55s-2.56,-1.14 -2.56,-2.55c0,-1.41 1.15,-2.55 2.56,-2.55S41.01,41.94 41.01,43.35z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M41.01,43.35c0,1.41 -1.14,2.55 -2.55,2.55s-2.56,-1.14 -2.56,-2.55c0,-1.41 1.15,-2.55 2.56,-2.55S41.01,41.94 41.01,43.35z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M49.52,45.48c0,1.41 -1.15,2.55 -2.56,2.55s-2.55,-1.14 -2.55,-2.55c0,-1.41 1.14,-2.56 2.55,-2.56S49.52,44.07 49.52,45.48z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M49.52,45.48c0,1.41 -1.15,2.55 -2.56,2.55s-2.55,-1.14 -2.55,-2.55c0,-1.41 1.14,-2.56 2.55,-2.56S49.52,44.07 49.52,45.48z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+    <path
+        android:pathData="M22.78,46.09c0,1.41 -1.14,2.55 -2.55,2.55c-1.41,0 -2.56,-1.14 -2.56,-2.55s1.15,-2.55 2.56,-2.55C21.64,43.53 22.78,44.68 22.78,46.09z"
+        android:fillColor="@color/tacPadBlue"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M22.78,46.09c0,1.41 -1.14,2.55 -2.55,2.55c-1.41,0 -2.56,-1.14 -2.56,-2.55s1.15,-2.55 2.56,-2.55C21.64,43.53 22.78,44.68 22.78,46.09z"
+        android:strokeWidth="1.4151"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/tacPadBlue"/>
+</vector>
