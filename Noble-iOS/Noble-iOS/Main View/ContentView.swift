@@ -5,8 +5,22 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack(alignment: .bottomTrailing) {
                 TacPadView(navBarHidden: $navBarHidden)
+
+                NavigationLink(
+                    destination: SettingsView()
+                        .onAppear {
+                            navBarHidden = false
+                        },
+                    label: {
+                        Image(systemName: Strings.gears)
+                            .resizable()
+                            .foregroundColor(.black)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 32)
+                            .padding([.bottom, .trailing])
+                    })
             }
             .background(Color.tacpadBlue.edgesIgnoringSafeArea(.all))
             .edgesIgnoringSafeArea(.vertical)

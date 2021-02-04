@@ -21,6 +21,8 @@
 		6302E31B25CAFEB80083F2DD /* TacPadBussonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */; };
 		6302E32125CAFEEA0083F2DD /* TacPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E32025CAFEEA0083F2DD /* TacPadView.swift */; };
 		6302E32925CAFF0A0083F2DD /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E32825CAFF0A0083F2DD /* DisplayView.swift */; };
+		6374894F25CC65C90095916A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374894E25CC65C90095916A /* Strings.swift */; };
+		6374895425CC7F5E0095916A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374895325CC7F5E0095916A /* SettingsView.swift */; };
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
 		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
@@ -79,6 +81,8 @@
 		6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadBussonsViewModel.swift; sourceTree = "<group>"; };
 		6302E32025CAFEEA0083F2DD /* TacPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadView.swift; sourceTree = "<group>"; };
 		6302E32825CAFF0A0083F2DD /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		6374894E25CC65C90095916A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		6374895325CC7F5E0095916A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* Noble-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noble-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7E242A565900829871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7555FF80242A565900829871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				6302E2E325CAFD100083F2DD /* Colors.swift */,
 				6302E2EB25CAFD2C0083F2DD /* Constants.swift */,
+				6374894E25CC65C90095916A /* Strings.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -163,6 +168,14 @@
 				6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6374895225CC7F4A0095916A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6374895325CC7F5E0095916A /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		638BCB4D25CA0A8200469EB6 /* Supporting Files */ = {
@@ -212,6 +225,7 @@
 				6302E2E225CAFCFD0083F2DD /* Constants */,
 				638BCB5425CA0B7C00469EB6 /* Main View */,
 				7555FF86242A565B00829871 /* Preview Content */,
+				6374895225CC7F4A0095916A /* Settings */,
 				638BCB4D25CA0A8200469EB6 /* Supporting Files */,
 				6302E2F125CAFD860083F2DD /* TacPad View */,
 				6302E31925CAFEA50083F2DD /* ViewModels */,
@@ -416,6 +430,7 @@
 				6302E31B25CAFEB80083F2DD /* TacPadBussonsViewModel.swift in Sources */,
 				6302E30A25CAFE390083F2DD /* SliderView.swift in Sources */,
 				6302E31625CAFE810083F2DD /* DialView.swift in Sources */,
+				6374894F25CC65C90095916A /* Strings.swift in Sources */,
 				6302E2E425CAFD100083F2DD /* Colors.swift in Sources */,
 				7555FF81242A565900829871 /* SceneDelegate.swift in Sources */,
 				6302E2F725CAFDC70083F2DD /* BackgroundView.swift in Sources */,
@@ -423,6 +438,7 @@
 				6302E2F325CAFDB10083F2DD /* ImageBackgroundDisplayView.swift in Sources */,
 				6302E30E25CAFE4A0083F2DD /* Sliders.swift in Sources */,
 				6302E2EC25CAFD2C0083F2DD /* Constants.swift in Sources */,
+				6374895425CC7F5E0095916A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,16 @@ struct TacPadButtonsGrid: View {
             VStack(alignment: .leading) {
                 addButtonRow(geometry: geometry,
                              leftButton: Button(action: { viewModel.playSoundClip(clip: .intro) },
-                                                label: {Text("Intro")}),
+                                                label: {Text("1")}),
                              rightButton: Button(action: { viewModel.playSoundClip(clip: .onYourOwn) },
-                                                 label: {Text("Carter Out")}))
+                                                 label: {Text("2")}))
                 Spacer().frame(height: spacing)
 
                 addButtonRow(geometry: geometry,
                              leftButton: Button(action: { viewModel.playSoundClip(clip: .loneWolf) },
-                                   label: {Text("Lone Wolf")}),
+                                   label: {Text("3")}),
                              rightButton: Button(action: { viewModel.playSoundClip(clip: .covenant) },
-                                    label: {Text("Covenant")}))
+                                    label: {Text("4")}))
             }
         }
     }
