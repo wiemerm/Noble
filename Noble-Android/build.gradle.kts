@@ -8,6 +8,10 @@ dependencies {
     implementation("com.google.android.material:material:1.2.1")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.3")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.3")
+    androidTestImplementation("androidx.navigation:navigation-testing:2.3.3")
 }
 
 android {
@@ -23,5 +27,8 @@ android {
         getByName("release") {
             isMinifyEnabled = false
         }
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
