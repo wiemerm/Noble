@@ -2,13 +2,9 @@ package com.fallencosplay.noble_mp.Noble
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
-import com.fallencosplay.noble_mp.Noble.databinding.ActivityMainBinding
-import com.fallencosplay.noble_mp.`Noble-Android`.ContentNavigation
-import com.fallencosplay.noble_mp.`Noble-Android`.KoinConfig
+import com.fallencosplay.noble_mp.android.ContentNavigation
+import com.fallencosplay.noble_mp.android.KoinConfig
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {

@@ -18,11 +18,17 @@
 		6302E30E25CAFE4A0083F2DD /* Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E30D25CAFE4A0083F2DD /* Sliders.swift */; };
 		6302E31225CAFE6F0083F2DD /* TacPadButtonsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E31125CAFE6F0083F2DD /* TacPadButtonsGrid.swift */; };
 		6302E31625CAFE810083F2DD /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E31525CAFE810083F2DD /* DialView.swift */; };
-		6302E31B25CAFEB80083F2DD /* TacPadBussonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */; };
 		6302E32125CAFEEA0083F2DD /* TacPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E32025CAFEEA0083F2DD /* TacPadView.swift */; };
 		6302E32925CAFF0A0083F2DD /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E32825CAFF0A0083F2DD /* DisplayView.swift */; };
 		6374894F25CC65C90095916A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374894E25CC65C90095916A /* Strings.swift */; };
 		6374895425CC7F5E0095916A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374895325CC7F5E0095916A /* SettingsView.swift */; };
+		63DB19A725DB2569009C6692 /* TacPadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB19A625DB2569009C6692 /* TacPadViewModel.swift */; };
+		63DB19AE25DB2A1D009C6692 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB19AD25DB2A1D009C6692 /* AudioService.swift */; };
+		63DB19B925DB2B8F009C6692 /* covenant_are_on_reach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B425DB2B8F009C6692 /* covenant_are_on_reach.mp3 */; };
+		63DB19BA25DB2B8F009C6692 /* on_your_own.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B525DB2B8F009C6692 /* on_your_own.mp3 */; };
+		63DB19BB25DB2B8F009C6692 /* back_to_full_strength.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B625DB2B8F009C6692 /* back_to_full_strength.mp3 */; };
+		63DB19BC25DB2B8F009C6692 /* lone_wolf_stuff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B725DB2B8F009C6692 /* lone_wolf_stuff.mp3 */; };
+		63DB19BD25DB2B8F009C6692 /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B825DB2B8F009C6692 /* intro.mp3 */; };
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
 		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
@@ -78,11 +84,17 @@
 		6302E30D25CAFE4A0083F2DD /* Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sliders.swift; sourceTree = "<group>"; };
 		6302E31125CAFE6F0083F2DD /* TacPadButtonsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadButtonsGrid.swift; sourceTree = "<group>"; };
 		6302E31525CAFE810083F2DD /* DialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
-		6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadBussonsViewModel.swift; sourceTree = "<group>"; };
 		6302E32025CAFEEA0083F2DD /* TacPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadView.swift; sourceTree = "<group>"; };
 		6302E32825CAFF0A0083F2DD /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		6374894E25CC65C90095916A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6374895325CC7F5E0095916A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		63DB19A625DB2569009C6692 /* TacPadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadViewModel.swift; sourceTree = "<group>"; };
+		63DB19AD25DB2A1D009C6692 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		63DB19B425DB2B8F009C6692 /* covenant_are_on_reach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = covenant_are_on_reach.mp3; sourceTree = "<group>"; };
+		63DB19B525DB2B8F009C6692 /* on_your_own.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = on_your_own.mp3; sourceTree = "<group>"; };
+		63DB19B625DB2B8F009C6692 /* back_to_full_strength.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back_to_full_strength.mp3; sourceTree = "<group>"; };
+		63DB19B725DB2B8F009C6692 /* lone_wolf_stuff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lone_wolf_stuff.mp3; sourceTree = "<group>"; };
+		63DB19B825DB2B8F009C6692 /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro.mp3; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* Noble-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noble-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7E242A565900829871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7555FF80242A565900829871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,11 +153,12 @@
 			children = (
 				6302E2F625CAFDC70083F2DD /* BackgroundView.swift */,
 				6302E31525CAFE810083F2DD /* DialView.swift */,
+				6302E32825CAFF0A0083F2DD /* DisplayView.swift */,
 				6302E2F225CAFDB10083F2DD /* ImageBackgroundDisplayView.swift */,
 				6302E31125CAFE6F0083F2DD /* TacPadButtonsGrid.swift */,
-				6302E2FA25CAFDF30083F2DD /* Background Views */,
 				6302E32025CAFEEA0083F2DD /* TacPadView.swift */,
-				6302E32825CAFF0A0083F2DD /* DisplayView.swift */,
+				63DB19A625DB2569009C6692 /* TacPadViewModel.swift */,
+				6302E2FA25CAFDF30083F2DD /* Background Views */,
 			);
 			path = "TacPad View";
 			sourceTree = "<group>";
@@ -165,7 +178,6 @@
 		6302E31925CAFEA50083F2DD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				6302E31A25CAFEB80083F2DD /* TacPadBussonsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -181,6 +193,7 @@
 		638BCB4D25CA0A8200469EB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63DB19B325DB2B8F009C6692 /* Sounds */,
 				7555FF7E242A565900829871 /* AppDelegate.swift */,
 				7555FF84242A565B00829871 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -196,6 +209,26 @@
 				7555FF82242A565900829871 /* ContentView.swift */,
 			);
 			path = "Main View";
+			sourceTree = "<group>";
+		};
+		63DB19AC25DB2A10009C6692 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63DB19AD25DB2A1D009C6692 /* AudioService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63DB19B325DB2B8F009C6692 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				63DB19B425DB2B8F009C6692 /* covenant_are_on_reach.mp3 */,
+				63DB19B525DB2B8F009C6692 /* on_your_own.mp3 */,
+				63DB19B625DB2B8F009C6692 /* back_to_full_strength.mp3 */,
+				63DB19B725DB2B8F009C6692 /* lone_wolf_stuff.mp3 */,
+				63DB19B825DB2B8F009C6692 /* intro.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		7555FF72242A565900829871 = {
@@ -225,6 +258,7 @@
 				6302E2E225CAFCFD0083F2DD /* Constants */,
 				638BCB5425CA0B7C00469EB6 /* Main View */,
 				7555FF86242A565B00829871 /* Preview Content */,
+				63DB19AC25DB2A10009C6692 /* Services */,
 				6374895225CC7F4A0095916A /* Settings */,
 				638BCB4D25CA0A8200469EB6 /* Supporting Files */,
 				6302E2F125CAFD860083F2DD /* TacPad View */,
@@ -373,8 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DB19BC25DB2B8F009C6692 /* lone_wolf_stuff.mp3 in Resources */,
+				63DB19BA25DB2B8F009C6692 /* on_your_own.mp3 in Resources */,
 				7555FF8B242A565B00829871 /* LaunchScreen.storyboard in Resources */,
+				63DB19BD25DB2B8F009C6692 /* intro.mp3 in Resources */,
+				63DB19BB25DB2B8F009C6692 /* back_to_full_strength.mp3 in Resources */,
 				7555FF88242A565B00829871 /* Preview Assets.xcassets in Resources */,
+				63DB19B925DB2B8F009C6692 /* covenant_are_on_reach.mp3 in Resources */,
 				7555FF85242A565B00829871 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +459,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DB19AE25DB2A1D009C6692 /* AudioService.swift in Sources */,
+				63DB19A725DB2569009C6692 /* TacPadViewModel.swift in Sources */,
 				6302E32925CAFF0A0083F2DD /* DisplayView.swift in Sources */,
 				6302E30625CAFE270083F2DD /* RightAngleSlit.swift in Sources */,
 				7555FF7F242A565900829871 /* AppDelegate.swift in Sources */,
@@ -427,7 +468,6 @@
 				6302E32125CAFEEA0083F2DD /* TacPadView.swift in Sources */,
 				6302E31225CAFE6F0083F2DD /* TacPadButtonsGrid.swift in Sources */,
 				6302E30225CAFE1B0083F2DD /* LeftAngleSlit.swift in Sources */,
-				6302E31B25CAFEB80083F2DD /* TacPadBussonsViewModel.swift in Sources */,
 				6302E30A25CAFE390083F2DD /* SliderView.swift in Sources */,
 				6302E31625CAFE810083F2DD /* DialView.swift in Sources */,
 				6374894F25CC65C90095916A /* Strings.swift in Sources */,

@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
-                TacPadView(navBarHidden: $navBarHidden)
+                TacPadView(viewModel: TacPadViewModel(), navBarHidden: $navBarHidden)
 
                 NavigationLink(
                     destination: SettingsView()

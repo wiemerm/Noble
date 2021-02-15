@@ -1,4 +1,4 @@
-package com.fallencosplay.noble_mp.`Noble-Android`
+package com.fallencosplay.noble_mp.android
 
 import org.koin.dsl.module
 

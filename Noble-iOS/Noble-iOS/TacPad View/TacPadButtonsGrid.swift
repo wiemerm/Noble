@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TacPadButtonsGrid: View {
-    private let viewModel = TacPadButtonsViewModel()
+    @ObservedObject var viewModel: TacPadViewModel
     private let spacing: CGFloat = 16
 
     var body: some View {
@@ -9,16 +9,16 @@ struct TacPadButtonsGrid: View {
 
             VStack(alignment: .leading) {
                 addButtonRow(geometry: geometry,
-                             leftButton: Button(action: { viewModel.playSoundClip(clip: .intro) },
+                             leftButton: Button(action: { viewModel.play(.intro) },
                                                 label: {Text("1")}),
-                             rightButton: Button(action: { viewModel.playSoundClip(clip: .onYourOwn) },
+                             rightButton: Button(action: {viewModel.play(.covenant)},
                                                  label: {Text("2")}))
                 Spacer().frame(height: spacing)
 
                 addButtonRow(geometry: geometry,
-                             leftButton: Button(action: { viewModel.playSoundClip(clip: .loneWolf) },
+                             leftButton: Button(action: {viewModel.play(.fullStrength)},
                                    label: {Text("3")}),
-                             rightButton: Button(action: { viewModel.playSoundClip(clip: .covenant) },
+                             rightButton: Button(action: {viewModel.play(.loneWolf)},
                                     label: {Text("4")}))
             }
         }
@@ -46,6 +46,6 @@ struct TacPadButtonsGrid: View {
 
 struct ButtonRow_Previews: PreviewProvider {
     static var previews: some View {
-        TacPadButtonsGrid()
+        TacPadButtonsGrid(viewModel: TacPadViewModel())
     }
 }

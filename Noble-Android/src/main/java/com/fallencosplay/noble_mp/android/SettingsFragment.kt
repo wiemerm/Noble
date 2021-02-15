@@ -1,4 +1,4 @@
-package com.fallencosplay.noble_mp.`Noble-Android`
+package com.fallencosplay.noble_mp.android
 
 import android.os.Bundle
 import android.view.LayoutInflater

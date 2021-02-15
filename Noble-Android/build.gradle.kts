@@ -16,6 +16,7 @@ dependencies {
     implementation("org.koin:koin-gradle-plugin:$koin_version")
     implementation("org.koin:koin-android:$koin_version")
     implementation("org.koin:koin-androidx-scope:$koin_version")
+    implementation("org.koin:koin-androidx-viewmodel:$koin_version")
     implementation("org.koin:koin-test:$koin_version")
     androidTestImplementation("androidx.navigation:navigation-testing:2.3.3")
 }

@@ -1,10 +1,10 @@
 import AVFoundation
 import Foundation
 
-class TacPadButtonsViewModel {
+class AudioService {
     private var audioPlayer = AVAudioPlayer()
 
-    func playSoundClip(clip: CarterSoundBites) {
+    func play(_ clip: CarterSoundBites) {
         guard let clipPath = Bundle.main.path(forResource: clip.rawValue, ofType: "mp3") else {
             print("Failed to find clip for \(clip.rawValue)")
             return

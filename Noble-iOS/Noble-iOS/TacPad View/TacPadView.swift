@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct TacPadView: View {
+    @ObservedObject var viewModel: TacPadViewModel
     @Binding var navBarHidden: Bool
 
     var body: some View {
@@ -18,7 +19,7 @@ struct TacPadView: View {
                 .frame(width: width * 0.425, height: height * 0.375)
                 .position(x: width * 0.65, y: height * 0.28)
 
-            TacPadButtonsGrid()
+            TacPadButtonsGrid(viewModel: viewModel)
                 .frame(width: width * 0.25, height: height * 0.175, alignment: .topLeading)
                 .position(x: width * 0.175, y: height * 0.2)
         }
@@ -36,15 +37,15 @@ struct TacPadView: View {
 struct TacPadView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TacPadView(navBarHidden: .constant(true))
+            TacPadView(viewModel: TacPadViewModel(), navBarHidden: .constant(true))
                 .previewLayout(PreviewLayout.fixed(width: 568, height: 320))
                 .previewDisplayName("iPhone SE 2020")
 
-            TacPadView(navBarHidden: .constant(true))
+            TacPadView(viewModel: TacPadViewModel(), navBarHidden: .constant(true))
                 .previewLayout(PreviewLayout.fixed(width: 609, height: 281))
                 .previewDisplayName("iPhone 11 Pro, XS")
 
-            TacPadView(navBarHidden: .constant(true))
+            TacPadView(viewModel: TacPadViewModel(), navBarHidden: .constant(true))
                 .previewLayout(PreviewLayout.fixed(width: 672, height: 311))
                 .previewDisplayName("iPhone 11 Pro Max, XS Max")
         }
