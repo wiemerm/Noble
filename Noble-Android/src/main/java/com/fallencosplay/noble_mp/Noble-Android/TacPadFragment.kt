@@ -6,21 +6,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import com.fallencosplay.noble_mp.Noble.R
 import com.fallencosplay.noble_mp.Noble.databinding.FragmentTacpadBinding
+import org.koin.android.ext.android.inject
 
-class TacPadFragment : Fragment(R.layout.fragment_tacpad) {
+class TacPadFragment : Fragment() {
+    private val contentNavigation: ContentNavigation by inject()
+    private lateinit var binding: FragmentTacpadBinding
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentTacpadBinding.inflate(inflater, container, false)
-
-        binding.settingsButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_tacpad_to_settings))
+        binding = FragmentTacpadBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.settingsButton.setOnClickListener { contentNavigation.navigateToSettingsFragment() }
+
     }
 
     override fun onResume() {

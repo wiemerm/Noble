@@ -7,18 +7,22 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.fallencosplay.noble_mp.Noble.databinding.ActivityMainBinding
+import com.fallencosplay.noble_mp.`Noble-Android`.ContentNavigation
+import com.fallencosplay.noble_mp.`Noble-Android`.KoinConfig
+import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var navController: NavController
+    private val contentNavigation by inject<ContentNavigation>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+        KoinConfig.start(this)
+        setContentView(R.layout.activity_main)
 
-        navController = (supportFragmentManager
+        val navController = (supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment)
             .navController
-        NavigationUI.setupActionBarWithNavController(this, navController)
+        contentNavigation.init(this, navController)
     }
 
     override fun onResume() {
@@ -28,6 +32,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp()
+        return contentNavigation.popBackStack()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        KoinConfig.stop()
     }
 }
