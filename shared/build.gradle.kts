@@ -15,7 +15,12 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.4.2")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
@@ -24,13 +29,20 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("com.google.android.material:material:1.2.1")
+                implementation("com.google.android.material:material:1.3.0")
+                implementation("org.koin:koin-core:2.2.2")
+                implementation("org.koin:koin-androidx-scope:2.2.2")
+                implementation("org.koin:koin-androidx-viewmodel:2.2.2")
+                implementation("org.koin:koin-androidx-fragment:2.2.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2")
             }
         }
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
-                implementation("junit:junit:4.13")
+                implementation("junit:junit:4.13.2")
+                implementation("org.koin:koin-test:2.2.2")
+                implementation("io.mockk:mockk:1.10.0")
             }
         }
         val iosMain by getting
