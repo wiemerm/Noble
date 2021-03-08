@@ -31,8 +31,6 @@ class TacPadFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.settingsButton.setOnClickListener { contentNavigation.navigateToSettingsFragment() }
-        binding.topLeftButton.setOnClickListener { viewModel.playClip() }
-
     }
 
     override fun onResume() {
