@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +10,7 @@
         android:id="@+id/background_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="20dp"
         android:scaleType="fitXY"
         android:src="@drawable/background"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,7 +26,7 @@
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintLeft_toLeftOf="@id/left_guideline"
         app:layout_constraintTop_toTopOf="@id/display_top_guideline"
-        app:layout_constraintWidth_percent="0.11" />
+        app:layout_constraintWidth_percent="0.1" />
 
     <Button
         android:id="@+id/top_right_button"
@@ -40,7 +39,7 @@
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintLeft_toRightOf="@id/top_left_button"
         app:layout_constraintTop_toTopOf="@id/top_left_button"
-        app:layout_constraintWidth_percent="0.11" />
+        app:layout_constraintWidth_percent="0.1" />
 
     <Button
         android:id="@+id/bottom_left_button"
@@ -53,7 +52,7 @@
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintLeft_toLeftOf="@id/left_guideline"
         app:layout_constraintTop_toBottomOf="@id/top_left_button"
-        app:layout_constraintWidth_percent="0.11" />
+        app:layout_constraintWidth_percent="0.1" />
 
     <Button
         android:id="@+id/bottom_right_button"
@@ -66,7 +65,7 @@
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintLeft_toRightOf="@id/top_left_button"
         app:layout_constraintTop_toTopOf="@id/bottom_left_button"
-        app:layout_constraintWidth_percent="0.11" />
+        app:layout_constraintWidth_percent="0.1" />
 
     <ImageView
         android:id="@+id/dial_rect"
@@ -76,7 +75,7 @@
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintLeft_toLeftOf="@id/top_left_button"
         app:layout_constraintTop_toTopOf="@id/dial_top_guideline"
-        app:layout_constraintWidth_percent="0.06" />
+        app:layout_constraintWidth_percent="0.05" />
 
     <ImageView
         android:layout_width="0dp"
@@ -86,7 +85,7 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toLeftOf="@id/dial_left_guideline"
         app:layout_constraintTop_toTopOf="@+id/dial_top_guideline"
-        app:layout_constraintWidth_percent="0.25" />
+        app:layout_constraintWidth_percent="0.235" />
 
     <include layout="@layout/slits_layout" />
 
@@ -125,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/dial_left_guideline"

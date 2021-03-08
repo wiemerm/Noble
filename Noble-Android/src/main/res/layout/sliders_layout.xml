@@ -12,7 +12,7 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/top_eighty_percent_guideline"
         app:layout_constraintLeft_toLeftOf="@id/left_rectangular_slit_guideline"
-        app:layout_constraintWidth_percent="0.545"
+        app:layout_constraintWidth_percent="0.54"
         app:layout_constraintHeight_percent="0.225"/>
 
     <ImageView
