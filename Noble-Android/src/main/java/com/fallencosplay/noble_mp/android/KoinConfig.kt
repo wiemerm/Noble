@@ -10,7 +10,7 @@ import org.koin.core.context.stopKoin
 class KoinConfig {
     companion object {
         private val modules = listOf(
-            navigationModule,
+            appModule,
             tacPadModule
         )
 
