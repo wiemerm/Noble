@@ -6,21 +6,14 @@ class SettingsViewModel: ObservableObject {
     private var disposeBag = Set<AnyCancellable>()
     @Published var devices = [BluetoothPeripheral]()
 
-    private let service: BluetoothService
+    private let service: BluetoothInterface
 
-    init(service: BluetoothService = BluetoothService()) {
+    init(service: BluetoothInterface = BluetoothService()) {
         self.service = service
     }
 
     func scanForDevices() {
-        service.fakeOutDevices()
+        print("Should start scanning for devices")
 
-        createPublisher(wrapper: service.getBluetoothDevices())
-            .compactMap { $0 as? [BluetoothPeripheral] }
-            .subscribe(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] devices in
-                self?.devices = devices
-            })
-            .store(in: &disposeBag)
     }
 }

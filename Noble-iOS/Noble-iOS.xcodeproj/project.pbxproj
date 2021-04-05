@@ -22,9 +22,8 @@
 		6302E32925CAFF0A0083F2DD /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302E32825CAFF0A0083F2DD /* DisplayView.swift */; };
 		6374894F25CC65C90095916A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374894E25CC65C90095916A /* Strings.swift */; };
 		6374895425CC7F5E0095916A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374895325CC7F5E0095916A /* SettingsView.swift */; };
-		63BA453E25F6934700A2B330 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA453D25F6934700A2B330 /* BluetoothManager.swift */; };
+		63BA453E25F6934700A2B330 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA453D25F6934700A2B330 /* BluetoothService.swift */; };
 		63BA454425F6B45D00A2B330 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA454325F6B45D00A2B330 /* SettingsViewModel.swift */; };
-		63BA454925F6BC5800A2B330 /* CoroutinesToCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA454825F6BC5800A2B330 /* CoroutinesToCombine.swift */; };
 		63DB19A725DB2569009C6692 /* TacPadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB19A625DB2569009C6692 /* TacPadViewModel.swift */; };
 		63DB19AE25DB2A1D009C6692 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB19AD25DB2A1D009C6692 /* AudioService.swift */; };
 		63DB19B925DB2B8F009C6692 /* covenant_are_on_reach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63DB19B425DB2B8F009C6692 /* covenant_are_on_reach.mp3 */; };
@@ -91,9 +90,8 @@
 		6302E32825CAFF0A0083F2DD /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		6374894E25CC65C90095916A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6374895325CC7F5E0095916A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		63BA453D25F6934700A2B330 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		63BA453D25F6934700A2B330 /* BluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 		63BA454325F6B45D00A2B330 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		63BA454825F6BC5800A2B330 /* CoroutinesToCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoroutinesToCombine.swift; sourceTree = "<group>"; };
 		63DB19A625DB2569009C6692 /* TacPadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPadViewModel.swift; sourceTree = "<group>"; };
 		63DB19AD25DB2A1D009C6692 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		63DB19B425DB2B8F009C6692 /* covenant_are_on_reach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = covenant_are_on_reach.mp3; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		63BA453B25F6932800A2B330 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				63BA453D25F6934700A2B330 /* BluetoothManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -229,7 +226,6 @@
 		63BA454725F6BC4600A2B330 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				63BA454825F6BC5800A2B330 /* CoroutinesToCombine.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -238,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				63DB19AD25DB2A1D009C6692 /* AudioService.swift */,
+				63BA453D25F6934700A2B330 /* BluetoothService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -494,14 +491,13 @@
 				6302E31225CAFE6F0083F2DD /* TacPadButtonsGrid.swift in Sources */,
 				6302E30225CAFE1B0083F2DD /* LeftAngleSlit.swift in Sources */,
 				6302E30A25CAFE390083F2DD /* SliderView.swift in Sources */,
-				63BA453E25F6934700A2B330 /* BluetoothManager.swift in Sources */,
+				63BA453E25F6934700A2B330 /* BluetoothService.swift in Sources */,
 				6302E31625CAFE810083F2DD /* DialView.swift in Sources */,
 				6374894F25CC65C90095916A /* Strings.swift in Sources */,
 				6302E2E425CAFD100083F2DD /* Colors.swift in Sources */,
 				7555FF81242A565900829871 /* SceneDelegate.swift in Sources */,
 				6302E2F725CAFDC70083F2DD /* BackgroundView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				63BA454925F6BC5800A2B330 /* CoroutinesToCombine.swift in Sources */,
 				6302E2F325CAFDB10083F2DD /* ImageBackgroundDisplayView.swift in Sources */,
 				6302E30E25CAFE4A0083F2DD /* Sliders.swift in Sources */,
 				63BA454425F6B45D00A2B330 /* SettingsViewModel.swift in Sources */,

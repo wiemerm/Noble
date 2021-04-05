@@ -4,6 +4,6 @@ import Foundation
 import shared
 
 
-class BluetoothManager: BluetoothManagerInterface {
+class BluetoothService: BluetoothInterface {
 
 }

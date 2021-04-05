@@ -1,12 +1,7 @@
 import Foundation
 
 class TacPadViewModel: ObservableObject {
-    private let audioService: AudioService
-    init(audioService: AudioService = AudioService()) {
-        self.audioService = audioService
+    init() {
     }
 
-    func play(_ clip: CarterSoundBites) {
-        audioService.play(clip)
-    }
 }

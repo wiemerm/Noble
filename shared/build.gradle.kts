@@ -17,8 +17,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.4.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2-native-mt")
             }
         }
         val commonTest by getting {
@@ -63,8 +62,7 @@ val packForXcode by tasks.creating(Sync::class) {
     group = "build"
     val mode = System.getenv("CONFIGURATION") ?: "DEBUG"
     val sdkName = System.getenv("SDK_NAME") ?: "iphonesimulator"
-    val targetName = "iosArm64"
-//    val targetName = "ios" + if (sdkName.startsWith("iphoneos")) "Arm64" else "X64"
+    val targetName = "ios" + if (sdkName.startsWith("iphoneos")) "Arm64" else "X64"
     val framework = kotlin.targets.getByName<KotlinNativeTarget>(targetName).binaries.getFramework(mode)
     inputs.property("mode", mode)
     dependsOn(framework.linkTask)
