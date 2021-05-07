@@ -14,13 +14,17 @@ extension Peripheral {
         ]
     static func previewPeripherals() -> [Peripheral] {
         previewDeviceNames.map {
-            Peripheral(identifier: UUID(), name: $0, rssi: Int.random(in: -99...99), peripheral: PreviewPeripheral.randomPeripheral(), status: .notConnected)
+            Peripheral(identifier: UUID(),
+                       name: $0,
+                       rssi: Int.random(in: -99...99),
+                       peripheral: PreviewPeripheral.randomPeripheral(),
+                       status: .notConnected)
         }
     }
 }
 
 struct PreviewPeripheral: BluetoothPeripheral {
-    var delegate: CBPeripheralDelegate?
+    weak var delegate: CBPeripheralDelegate?
     let name: String?
     let identifier: UUID
 
