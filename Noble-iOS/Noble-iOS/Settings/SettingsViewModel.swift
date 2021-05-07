@@ -1,19 +1,17 @@
-import Combine
 import Foundation
-import shared
+import HealthKit
+import SwiftUI
 
 class SettingsViewModel: ObservableObject {
-    private var disposeBag = Set<AnyCancellable>()
-    @Published var devices = [BluetoothPeripheral]()
+//    private var userDefaults: UserDefaultsWrapperProtocol
+//    private let healthStore: HealthStoreProtocol?
 
-    private let service: BluetoothInterface
+    @Published var showHeartRate: Bool
 
-    init(service: BluetoothInterface = BluetoothService()) {
-        self.service = service
-    }
+    @Published var showStepCount: Bool
 
-    func scanForDevices() {
-        print("Should start scanning for devices")
-
+    init() {
+        showHeartRate = false
+        showStepCount = false
     }
 }

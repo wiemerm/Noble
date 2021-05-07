@@ -9,7 +9,7 @@ struct ContentView: View {
                 TacPadView(viewModel: TacPadViewModel(), navBarHidden: $navBarHidden)
 
                 NavigationLink(
-                    destination: SettingsView(viewModel: SettingsViewModel())
+                    destination: SettingsView(navBarHidden: $navBarHidden)
                         .onAppear {
                             navBarHidden = false
                         },

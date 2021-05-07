@@ -29,10 +29,10 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("com.google.android.material:material:1.3.0")
-                implementation("org.koin:koin-core:2.2.2")
-                implementation("org.koin:koin-androidx-scope:2.2.2")
-                implementation("org.koin:koin-androidx-viewmodel:2.2.2")
-                implementation("org.koin:koin-androidx-fragment:2.2.2")
+                implementation("io.insert-koin:koin-core:3.0.1")
+                implementation("io.insert-koin:koin-androidx-scope:3.0.1")
+                implementation("io.insert-koin:koin-androidx-viewmodel:3.0.1")
+                implementation("io.insert-koin:koin-androidx-fragment:3.0.1")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2")
             }
         }
@@ -40,7 +40,7 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-junit"))
                 implementation("junit:junit:4.13.2")
-                implementation("org.koin:koin-test:2.2.2")
+                implementation("io.insert-koin:koin-test:3.0.1")
                 implementation("io.mockk:mockk:1.10.0")
             }
         }
@@ -50,11 +50,11 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(30)
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
         minSdkVersion(24)
-        targetSdkVersion(29)
+        targetSdkVersion(30)
     }
 }
 
@@ -62,6 +62,7 @@ val packForXcode by tasks.creating(Sync::class) {
     group = "build"
     val mode = System.getenv("CONFIGURATION") ?: "DEBUG"
     val sdkName = System.getenv("SDK_NAME") ?: "iphonesimulator"
+
     val targetName = "ios" + if (sdkName.startsWith("iphoneos")) "Arm64" else "X64"
     val framework = kotlin.targets.getByName<KotlinNativeTarget>(targetName).binaries.getFramework(mode)
     inputs.property("mode", mode)
