@@ -4,18 +4,13 @@ plugins {
 }
 
 dependencies {
-    val koin_version = findProperty("koin_version")
     implementation(project(":shared"))
     implementation("com.google.android.material:material:1.3.0")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
-
-    implementation("io.insert-koin:koin-core:3.0.1")
-    implementation("io.insert-koin:koin-androidx-scope:3.0.1")
-    implementation("io.insert-koin:koin-androidx-viewmodel:3.0.1")
-    implementation("io.insert-koin:koin-androidx-fragment:3.0.1")
+    implementation("io.insert-koin:koin-android:3.0.1")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("io.mockk:mockk:1.10.0")
@@ -26,6 +21,13 @@ dependencies {
 
 android {
     compileSdkVersion(30)
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
     defaultConfig {
         applicationId = "com.fallencosplay.noble_mp.Noble"
         minSdkVersion(24)

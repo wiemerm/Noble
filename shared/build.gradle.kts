@@ -29,10 +29,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("com.google.android.material:material:1.3.0")
-                implementation("io.insert-koin:koin-core:3.0.1")
-                implementation("io.insert-koin:koin-androidx-scope:3.0.1")
-                implementation("io.insert-koin:koin-androidx-viewmodel:3.0.1")
-                implementation("io.insert-koin:koin-androidx-fragment:3.0.1")
+                implementation("io.insert-koin:koin-android:3.0.1")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2")
             }
         }
