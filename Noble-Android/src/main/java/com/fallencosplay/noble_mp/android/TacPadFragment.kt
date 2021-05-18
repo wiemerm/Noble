@@ -11,18 +11,16 @@ import com.fallencosplay.noble_mp.android.tacpad.TacPadViewModel
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 class TacPadFragment : Fragment() {
     private val viewModel by viewModel<TacPadViewModel>()
     private val contentNavigation: ContentNavigation by inject()
     private lateinit var binding: FragmentTacpadBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentTacpadBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -30,12 +28,26 @@ class TacPadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.settingsButton.setOnClickListener { contentNavigation.navigateToSettingsFragment() }
+        binding.apply {
+            settingsButton.setOnClickListener { contentNavigation.navigateToSettingsFragment() }
+            topLeftButton.setOnClickListener { viewModel.playClip(INTRO) }
+            topRightButton.setOnClickListener { viewModel.playClip(LONE_WORLF) }
+            bottomLeftButton.setOnClickListener { viewModel.playClip(COVENANT) }
+            bottomRightButton.setOnClickListener { viewModel.playClip(ON_YOUR_OWN) }
+        }
+
     }
 
     override fun onResume() {
         super.onResume()
 
         (activity as? AppCompatActivity)?.supportActionBar?.hide()
+    }
+
+    companion object {
+        const val INTRO = "intro"
+        const val LONE_WORLF = "lone_wolf"
+        const val COVENANT = "covenant"
+        const val ON_YOUR_OWN = "carter_out"
     }
 }
